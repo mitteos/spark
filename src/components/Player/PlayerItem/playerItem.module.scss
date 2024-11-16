@@ -1,0 +1,23 @@
+.player__row {
+  display: flex;
+  align-items: center;
+  .name {
+    font-size: 28px;
+    font-weight: 500;
+    margin: 0 auto 0 32px;
+    max-width: auto;
+    background: none;
+    border: none;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    &:focus {
+      outline: none;
+    }
+  }
+  .remove {
+    width: 21px;
+    height: 21px;
+    background-image: none;
+  }
+}

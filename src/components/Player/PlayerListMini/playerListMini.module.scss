@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 13px;
+  row-gap: 16px;
+  margin-bottom: 28px;
+  .item {
+    display: inline-flex;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    padding: 7px 20px;
+    border-radius: 12px;
+    justify-content: stretch;
+  }
+  .male {
+    background: rgb(50, 35, 194);
+  }
+  .female {
+    background: rgb(154, 30, 26);
+  }
+}

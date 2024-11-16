@@ -1,0 +1,42 @@
+.container {
+  background: rgba(255, 255, 255, 0.22);
+  border-radius: 30px;
+  width: 86px;
+  min-width: 86px;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  .male {
+    position: relative;
+    z-index: 1;
+    fill: rgba(26, 0, 255, 0.45);
+    transition: all 0.3s ease;
+  }
+  .active__male {
+    fill: #1a00ff;
+  }
+  .female {
+    position: relative;
+    z-index: 1;
+    fill: rgba(255, 9, 0, 0.45);
+    transition: all 0.3s ease;
+  }
+  .active__female {
+    fill: #ff0900;
+  }
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: #fff;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+  }
+  .active__background {
+    transform: translateX(100%);
+  }
+}

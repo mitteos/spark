@@ -1,0 +1,25 @@
+.container {
+  width: 100%;
+  padding: 26px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 21px;
+  background: rgba(255, 255, 255, 0.17);
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  .list {
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+    flex: 1;
+    .item {
+      font-size: 24px;
+      font-weight: 700;
+    }
+  }
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,19 @@
+.button {
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.35);
+  width: 100%;
+  padding: 16px 0;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  outline: none;
+  border: none;
+  transition: all 0.3s ease;
+  &:hover {
+    background: rgba(255, 255, 255, 0.5);
+  }
+  &:focus {
+    outline: none;
+  }
+}
