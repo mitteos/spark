@@ -5,6 +5,7 @@ import styles from "./pairItem.module.scss";
 import { useAppDispatch } from "@/store/hooks";
 import { pairActions } from "@/store/reducers/pairSlice";
 import { playerActions } from "@/store/reducers/playerSlice";
+import { useEffect } from "react";
 
 interface PairItemProps {
   pair: IPair;

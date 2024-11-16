@@ -2,6 +2,7 @@ import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import userReducer from "./reducers/userSlice";
 import playerReducer from "./reducers/playerSlice";
 import pairReducer from "./reducers/pairSlice";
+import gameReducer from "./reducers/gameSlice";
 import {
   FLUSH,
   PAUSE,
@@ -18,6 +19,7 @@ const rootReducer = combineReducers({
   userReducer,
   playerReducer,
   pairReducer,
+  gameReducer,
 });
 
 const persistConfig = {

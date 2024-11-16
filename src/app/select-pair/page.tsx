@@ -8,7 +8,8 @@ import { PairInfo } from "@/components/UI/PairInfo/PairInfo";
 import { PlayerListMini } from "@/components/Player/PlayerListMini/PlayerListMini";
 import { PairItem } from "@/components/Pair/PairItem/PairItem";
 import { useAppSelector } from "@/store/hooks";
-
+import Image from "next/image";
+import Logo from "@/static/icons/logo.svg";
 export default function SelectPair() {
   const [infoIsActive, setInfoIsActive] = useState(false);
   const { pairs } = useAppSelector((state) => state.pairReducer);
@@ -28,7 +29,9 @@ export default function SelectPair() {
         <div className={styles.back}>
           <BackButton />
         </div>
-        <p className={styles.title}>Spark</p>
+        <div className={styles.title}>
+          <Image src={Logo} alt="logo" />
+        </div>
         <div className={styles.info}>
           <div onClick={handleOpenInfo}>
             <svg
@@ -77,7 +80,7 @@ export default function SelectPair() {
       </div>
       <div className={styles.footer}>
         <p className={styles.help}>Нажми на жертву, чтобы добавить в пару</p>
-        <PrimaryButton>
+        <PrimaryButton variant={pairs.length < 1 ? "secondary" : "primary"}>
           {pairs.length < 1 ? "Пропустить" : "Начать"}
         </PrimaryButton>
       </div>

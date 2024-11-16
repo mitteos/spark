@@ -50,7 +50,7 @@ export default function SelectPlayers() {
       </div>
       <div className={styles.footer}>
         <Link href={players.length < 3 ? "/games/poses" : "/select-pair"}>
-          <PrimaryButton>Продолжить</PrimaryButton>
+          <PrimaryButton variant="primary">Продолжить</PrimaryButton>
         </Link>
       </div>
     </div>

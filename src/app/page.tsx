@@ -15,8 +15,8 @@ export default function Home() {
       <div className={styles.title}>
         <Image src={Logo} alt="logo" />
       </div>
-      <Link className={styles.link} href="/select-players">
-        <PrimaryButton>Играть</PrimaryButton>
+      <Link className={styles.link} href="/games">
+        <PrimaryButton variant="primary">Играть</PrimaryButton>
       </Link>
       <PrimaryButton>Обратная связь</PrimaryButton>
     </div>

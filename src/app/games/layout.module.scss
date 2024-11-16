@@ -13,9 +13,66 @@
       justify-self: flex-start;
     }
     .title {
-      font-weight: 700;
-      font-size: 28px;
-      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .list {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      .container {
+        position: fixed;
+        content: "";
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 2;
+        padding: 30px;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.3s ease;
+        .inner {
+          background-color: rgba(255, 255, 255, 0.9);
+          width: 100%;
+          height: 100%;
+          color: #000;
+          padding: 30px 15px;
+          border-radius: 21px;
+          position: relative;
+          .title {
+            font-size: 28px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 25px;
+          }
+          .close {
+            position: absolute;
+            right: 15px;
+            top: 15px;
+          }
+          .list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+            .item {
+              width: 100%;
+              padding: 10px 0;
+              border-radius: 15px;
+              background-color: #f5f5f5;
+              box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+              text-align: center;
+            }
+          }
+        }
+      }
+      .active {
+        visibility: visible;
+        opacity: 1;
+      }
     }
   }
   .main {
@@ -23,5 +80,8 @@
     display: flex;
     flex-direction: column;
     padding: 0 20px 20px 20px;
+  }
+  .mainGames {
+    padding: 0 0 20px 0;
   }
 }

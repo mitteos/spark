@@ -13,9 +13,9 @@
       justify-self: flex-start;
     }
     .title {
-      font-weight: 700;
-      font-size: 28px;
-      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
   .main {

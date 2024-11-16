@@ -1,6 +1,6 @@
 .button {
   border-radius: 16px;
-  background: rgba(255, 255, 255, 0.35);
+  background: #014bc6;
   width: 100%;
   padding: 16px 0;
   color: #fff;
@@ -16,4 +16,7 @@
   &:focus {
     outline: none;
   }
+}
+.secondary {
+  background: rgba(255, 255, 255, 0.35);
 }
