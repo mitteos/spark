@@ -7,10 +7,10 @@ import { BackButton } from "@/components/UI/BackButton/BackButton";
 import { usePathname } from "next/navigation";
 import ListIcon from "@/static/icons/gamesList.svg";
 import CloseIcon from "@/static/icons/close.svg";
-import { gamesMock } from "./page";
 import { useState } from "react";
 import { useAppDispatch } from "@/store/hooks";
 import { gameActions } from "@/store/reducers/gameSlice";
+import { gamesMock } from "@/mocks/gameMock";
 
 export default function RootLayout({
   children,
