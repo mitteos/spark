@@ -27,7 +27,8 @@ export default function Games() {
   };
 
   const handleStartGame = () => {
-    router.push(gamesMock[selectedGame].href);
+    router.push("/select-players");
+    console.log(selectedGame);
   };
 
   useEffect(() => {
